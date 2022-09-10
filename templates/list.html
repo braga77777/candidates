@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Candidates</title>
+</head>
+<body style="text-align: center;">
+    <h1>Все кандидаты</h1>
+    {% for c in candidates %}
+    <p><a href="/candidate/{{c['id']}}">{{c['name']}}</a></p>
+    {% endfor %}
+
+</body>
+</html>
